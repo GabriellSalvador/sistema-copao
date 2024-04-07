@@ -96,13 +96,14 @@ public class App {
     
             String nomeSabor = obterNomeSabor(op);
             System.out.println("Sabor do Suco: " + nomeSabor);
+            int quantidadeSucos = 0;
     
             if (totalSabores < 2) {
                 System.out.print("Deseja adicionar mais um sabor? (1-S e 2-N): ");
                 continuarPedido = teclado.next();
                 if (!continuarPedido.equals("1")) {
-                    System.out.println("Pedido cancelado.");
-                    break;
+                    System.out.println("Quantos copos de suco você deseja");
+                    quantidadeSucos = teclado.nextInt();
                 }
             }
 
@@ -117,7 +118,7 @@ public class App {
             totalSabores++;
         } while (true);
     
-        valorTotal = totalSabores * 10.0;
+        valorTotal = quantidadeSucos * totalSabores * 10.0;
         pedidosCliente.add("Total de sabores: " + totalSabores);
         pedidosCliente.add("Valor total: " + valorTotal);
         return pedidosCliente;
