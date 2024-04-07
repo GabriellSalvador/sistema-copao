@@ -62,6 +62,7 @@ public class App {
         List<String> pedidosCliente = new ArrayList<>();
         String continuarPedido = "";
         int totalSabores = 0;
+        int quantidadeSucos = 0;
     
         do {
             System.out.println("\nMenu de Sabores:");
@@ -96,7 +97,6 @@ public class App {
     
             String nomeSabor = obterNomeSabor(op);
             System.out.println("Sabor do Suco: " + nomeSabor);
-            int quantidadeSucos = 0;
     
             if (totalSabores < 2) {
                 System.out.print("Deseja adicionar mais um sabor? (1-S e 2-N): ");
