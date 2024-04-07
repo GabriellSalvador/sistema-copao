@@ -63,6 +63,7 @@ public class App {
         String continuarPedido = "";
         int totalSabores = 0;
         int quantidadeSucos = 0;
+        
     
         do {
             System.out.println("\nMenu de Sabores:");
