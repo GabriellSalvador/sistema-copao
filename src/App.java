@@ -38,7 +38,7 @@ public class App {
             System.out.println("Digite a sua senha: ");
             senha = teclado.nextInt();
             if (login != 111 || senha != 111) {
-                System.out.println("\nLogin ou senha inválidos");
+                System.out.println("Login ou senha inválidos");
             }
         } while (login != 111 || senha != 111);
         cadastrarClientes();
@@ -63,7 +63,7 @@ public class App {
         String continuarPedido = "";
         int totalSabores = 0;
         int quantidadeSucos = 0;
-        
+
     
         do {
             System.out.println("\nMenu de Sabores:");
